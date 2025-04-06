@@ -28,7 +28,8 @@ Just open the `index.html` file in your browser.
 
 ## 📸 Screenshot
 
-![image](https://github.com/user-attachments/assets/c6b658b4-fdc0-4a82-81d9-b4d5800ef523)
+![image](https://github.com/user-attachments/assets/afba63ca-31be-40e6-86ae-c256e3d89482)
+
 
 ## 🤝 Contributing
 
