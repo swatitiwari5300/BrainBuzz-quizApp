@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Background Gradient */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #c0f0d4;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;  /* Stack elements vertically */
+}
+
+.quiz-container {
+    background-color: #fffdf5;        /* Soft cream */
+    border-radius: 20px;
+    padding: 30px 25px;
+    width: 500px;
+    margin: 40px auto;                /* Centers the box */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Visible soft shadow */
+    text-align: center;
+  }
+
+  .quiz-container h1 {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+
+  .quiz-container h2 {
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #76f1c4; /* Soft mint */
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.quiz-container h2:hover {
+    background-color: #5be3b0;
+    transform: scale(1.05);
+}
+
+  .quiz-container p {
+    font-size: 13px;
+    margin-bottom: 16px;
+    color: rgb(95, 93, 93);
+  }
+  
+
+/* Positioning Designed by text at the right corner */
+.footer-text {
+    position: fixed;     /* Fixed positioning */
+    bottom: 10px;        /* 10px from the bottom of the page */
+    right: 20px;         /* 20px from the right edge */
+    font-size: 14px;     /* Font size for the footer text */
+    color: #090909;         /* Text color */
+}
+
+.option-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    width: 80%;
+    background-color: #fdf2d0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option-btn:hover {
+    background-color: #e4e4e4;
+}
+#nextBtn {
+    padding: 10px 20px;
+    background-color: #7d60fb;  /* Soft purple */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#nextBtn:hover {
+    background-color: #674de4;
+    transform: translateY(-1px);
+}
+
+#nextBtn:active {
+    transform: translateY(0);
+}
+
+#score {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    background-color: #e6f7ff;
+    padding: 8px 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin-top: 12px;
+}
+
+#progress {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .option-btn.correct {
+    animation: correctPulse 0.3s ease-in-out;
+  }
+  
+  .option-btn.wrong {
+    animation: shake 0.3s ease-in-out;
+  }
+  
+  @keyframes correctPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    75% { transform: translateX(4px); }
+  }
+  
+  
