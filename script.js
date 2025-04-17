@@ -55,7 +55,7 @@ nextBtn.addEventListener("click", () => {
         score = 0;
         scoreEl.textContent = score;
         nextBtn.textContent = "Next";
-    
+
         fetchQuestions().then(() => {
             loadQuestion();
         });
@@ -82,8 +82,8 @@ function loadQuestion() {
         btn.onclick = () => selectOption(option, currentQ.answer, btn);
         optionsEl.appendChild(btn);
     });
-    document.getElementById("progress").textContent = 
-  `Question ${currentQuestionIndex + 1} of ${questions.length}`;
+    document.getElementById("progress").textContent =
+        `Question ${currentQuestionIndex + 1} of ${questions.length}`;
 
 }
 
@@ -91,17 +91,25 @@ function selectOption(selected, correct, btn) {
     const allButtons = document.querySelectorAll(".option-btn");
     allButtons.forEach(b => {
         b.disabled = true;
-        b.style.backgroundColor = "#f0f0f0";
+        if (b.textContent === correct) {
+            // Highlight the correct answer in green
+            b.style.backgroundColor = "#4CAF50";
+            b.classList.add("correct");
+        } else if (b === btn) {
+            // If this is the selected wrong answer, highlight in red
+            if (selected !== correct) {
+                b.style.backgroundColor = "#f44336";
+                b.classList.add("wrong")`;
+            }
+        } else {
+            // Dim other options
+            b.style.backgroundColor = "#f0f0f0";
+        }
     });
 
     if (selected === correct) {
-        btn.classList.add("correct");
-        btn.style.backgroundColor = "#4CAF50"; // green
         score++;
         scoreEl.textContent = score;
-    } else {
-        btn.classList.add("wrong");
-        btn.style.backgroundColor = "#f44336"; // red
     }
 
     nextBtn.style.display = "inline-block";
