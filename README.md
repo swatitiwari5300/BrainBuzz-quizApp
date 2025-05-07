@@ -35,4 +35,4 @@ Just open the `index.html` file in your browser.
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Feel free to customize it further for your personal branding or add badges. Let me know if you want a version that includes score tracking or enhancements!
+Feel free to customize it further for your personal branding or add badges. Let me know if you want a version that includes score tracking or enhancements!!!
