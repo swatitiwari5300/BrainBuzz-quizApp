@@ -2,6 +2,7 @@ let questions = [];
 let currentQuestionIndex = 0;
 let score = 0;
 
+
 const startBtn = document.getElementById("startBtn");
 const quizCard = document.getElementById("quizCard");
 const questionEl = document.getElementById("question");
