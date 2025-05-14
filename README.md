@@ -1,6 +1,6 @@
 # 🧠 BrainBuzz-Quiz App
 
-A simple and interactive quiz application built using HTML, CSS, and JavaScript. It displays one question at a time, allows users to select an answer, and provides feedback instantly.
+A simple and interactive quiz application built using HTML, CSS, and JavaScript. It displays one question at a time, allows users to select an answer, and provides feedback instantly!!
 
 ## ✨ Features
 
